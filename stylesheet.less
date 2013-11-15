@@ -212,7 +212,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   float:none;
   margin:0px auto;
   display:table;
-  margin-top:30px;
 }
 
 /* ===============================
@@ -395,7 +394,7 @@ footer p {
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -1261,7 +1260,7 @@ hr.line.align-right {
     text-indent: 12px;
     border:0;
     background-color: @color-swatch2;
-    border-bottom:1px solid @color-swatch1;
+    border-bottom:1px solid darken(@color-swatch2,5%);
 }
 
 .widget.contactform fieldset textarea {
@@ -1553,8 +1552,6 @@ hr.line.align-right {
 
 footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicons span a {
     border: 0;
-    border-right: 1px solid @color-swatch7;
-    border-bottom: 1px solid @color-swatch7;
 }
 
 
@@ -1887,9 +1884,17 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   }
 
   .widget.feature h3 {
-    font-size: bkscale(@font-swatch9-font-size,0.8);
     margin-top: 10px;
     padding-top: 5px;
+  }
+
+  header .widget.profile {
+    display:none;
+  }
+
+  .centeralign{
+    margin:0px auto;
+    display:table;
   }
 
   /* NAV */
@@ -1908,7 +1913,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 8%;
+    width: 6%;
     position: relative;
     margin:0px auto;
     top:61px;
@@ -2092,6 +2097,15 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size: bkscale(@font-swatch3-font-size,0.9);
   }
 
+  header .widget.profile {
+    display:none;
+  }
+
+  .centeralign{
+    display:table;
+    margin:0px auto;
+  }
+
   /* UL ALIGN RIGHT */
 
   .widget.extendednavigation ul.align-right li.folder {
@@ -2115,14 +2129,12 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   }
 
   .widget.feature h2 {
-    font-size: bkscale(@font-swatch8-font-size,0.4);
+    font-size: bkscale(@font-swatch8-font-size,0.5);
     line-height: bkscale(@font-swatch8-line-height,0.5);
   }
 
   .widget.feature h3 {
-    font-size: bkscale(@font-swatch9-font-size,0.7);
-    margin-top: 10px;
-    padding-top: 5px;
+    font-size: bkscale(@font-swatch9-font-size,0.9);
   }
 
   .widget.feature button {
@@ -2131,6 +2143,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget.feature .content .spare{
     margin-top:129px;
+  }
+
+  .widget.feature h3 {
+line-height: bkscale(@font-swatch8-line-height,0.4);
   }
 
 /* NAV */
