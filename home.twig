@@ -9,14 +9,18 @@
             <div class="wrapper clearfix">
                 {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
                 {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-                {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+                {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
             </div>
         </header>
     </div>
 </section>
 
-<div class="bluebar">
-    <span>{{widget('content', 'textwidgetbox1', {content: '<h4>Lorem ipsum dolor sit amet.</h4>', lines: 'all'})|raw}}</span>
+    <div class="navbar">
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </div>
+
+    <div class="bluebar">
+        <span>{{widget('content', 'textwidgetbox1', {content: '<h4>Lorem ipsum dolor sit amet.</h4>', lines: 'all'})|raw}}</span>
     </div>
 
 <div class="canvas">

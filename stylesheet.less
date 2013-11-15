@@ -131,15 +131,13 @@ blockquote:after {
    CUSTOM CSS
    =============================== */
 .navbar {
-  background-color:@color-swatch4;
-  height:80px;
-  width:20%;
+  background-color:darken(@color-swatch2,75%);
+  height:40px;
 }
 
 
 .bluebar {
   background-color:@color-swatch4;
-  height:80px;
 }
 
 .bluebar h4 {
@@ -317,9 +315,9 @@ footer p {
    =============================== */
 
 .widget.extendednavigation {
-  float: right;
   position: relative;
-  max-width: 740px;
+  max-width: 960px;
+  margin:0px auto;
 }
 
 .widget.extendednavigation a.pull {
@@ -327,9 +325,7 @@ footer p {
 }
 
 .widget.extendednavigation ul {
-  float: left;
   margin: 0px;
-  padding: 0px;
 }
 
 /* ALIGNMENTS */
@@ -356,7 +352,7 @@ footer p {
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 32px 30px;
+  padding: 6px 30px;
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
@@ -1276,7 +1272,7 @@ hr.line.align-right {
     font-weight:@font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
     letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
+    background-color: @color-swatch4;
     color: @font-swatch7-color;
     font-size: .9em;
     width:100%;
@@ -1284,7 +1280,7 @@ hr.line.align-right {
 }
   
 .widget.contactform fieldset button.btn:hover {
-  background-color: @font-swatch7-background-color-hover;
+  background-color: darken(@color-swatch4,5%);
   cursor: pointer;
 }
 
@@ -1433,7 +1429,7 @@ hr.line.align-right {
 
 .widget.socialicons span a:hover, .widget.profile 
 .bk-profile-socialicons span a:hover {
-    background-color: @font-swatch7-background-color-hover;
+    background-color: @color-swatch4;
 }
 
 /* SVG ICONS */
@@ -1572,17 +1568,23 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 }
 
 .widget.profile form input {
-    width: 100%;
+    width: 60%;
     height: 50px;
     padding: 0;
-    margin-right: -1%;
+    margin-right: -2%;
     background-color: @color-swatch1;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
+    color: @font-swatch4-color;
     text-indent: 20px;
     border: 1px solid @color-swatch1;
     max-width: 300px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .widget.profile form input:focus {
@@ -1595,20 +1597,28 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: @font-swatch7-background-color;
+    background-color: darken(@color-swatch4,10%);
     font-family: @font-swatch7-font-family;
     font-weight: @font-swatch7-font-weight;
     letter-spacing: @font-swatch7-letter-spacing;
-    color: @font-swatch7-color;
+    color: @font-swatch8-color;
     font-size: 1em;
-    text-decoration: none;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
     position: relative;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-image: image('/images/button-arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 7px 44px 7px 14px;
+    border: 0;
 }
 
 .widget.profile form button:hover {
-    background-color: @font-swatch7-background-color-hover;
+    background-color: darken(@color-swatch4,20%);
     cursor: pointer;
 }
 
@@ -1653,11 +1663,12 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 }
 
 .widget.signupform fieldset input {
+    width:60%;
     height: 51px;
     padding: 0;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
+    color: @font-swatch4-color;
     text-indent: 20px;
     border:0;
     background-color:@color-swatch2;
