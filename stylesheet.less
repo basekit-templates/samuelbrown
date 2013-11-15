@@ -130,6 +130,8 @@ blockquote:after {
 /* ===============================
    CUSTOM CSS
    =============================== */
+
+
 .navbar {
   background-color:darken(@color-swatch2,75%);
   height:40px;
@@ -178,6 +180,40 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   bottom: inherit;
 }
 
+
+.bk-pt-default .widget.extendednavigation {
+  padding:26px 0px;
+}
+
+.bk-pt-default .widget .extendednavigation a.pull {
+  width:100%;
+  top:63px;
+}
+
+@media only screen and (max-width: 480px) {
+.bk-pt-default .widget .extendednavigation a.pull {
+  width:100%;
+  top:-3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+.bk-pt-default .widget.extendednavigation {
+  padding:0px 0px;
+  }
+}
+
+.widget.profile {
+  float:right;
+  min-height:68px;
+}
+
+.footerphone {
+  float:none;
+  margin:0px auto;
+  display:table;
+  margin-top:30px;
+}
 
 /* ===============================
    HEADER
@@ -318,6 +354,7 @@ footer p {
   position: relative;
   max-width: 960px;
   margin:0px auto;
+  display:table;
 }
 
 .widget.extendednavigation a.pull {
@@ -393,7 +430,6 @@ footer p {
   position: absolute;
   background-color: @color-swatch4;
   z-index: 500;
-  top:72px;
   padding:10px 0px;
 }
 
@@ -570,7 +606,6 @@ footer p {
   display: inherit;
   border-bottom: 0;
   padding-bottom: 0;
-  text-transform: uppercase;
 }
 
 /* FEATURE STRAPLINE */
@@ -1103,7 +1138,6 @@ hr.line.align-right {
   background-position: top 17px center;
   padding-top:80px;
   margin-top:20px;
-  max-width:500px;
   margin:0px auto;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1197,7 +1231,6 @@ hr.line.align-right {
     background-position: top 16px center;
     padding-top:80px;
     margin-top:20px;
-    max-width:500px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1709,6 +1742,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
    SLIDESHOW WIDGET
    =============================== */
 
+   .slideshow-widget{
+    background-color:@color-swatch2;
+   }
+
 .widget.responsiveslideshow .slideshow-widget-wrapper {
     height: 726px;
 }
@@ -1863,13 +1900,18 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     padding: 0;
   }
 
+  .widget.extendednavigation ul li:first-child {
+  margin-top:40px;
+  }
+
   /* NAV ICON */
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 100%;
-    position: absolute;
-    top: -7px;
+    width: 8%;
+    position: relative;
+    margin:0px auto;
+    top:61px;
   }
 
     .widget .extendednavigation a.pull:after {
@@ -2089,6 +2131,16 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget.feature .content .spare{
     margin-top:129px;
+  }
+
+/* NAV */
+
+    .widget .extendednavigation a.pull {
+    display: table;
+    width: 13%;
+    position: relative;
+    top: 60px;
+    margin:0px auto;
   }
 
      /* GALLERY */
