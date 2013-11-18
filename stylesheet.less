@@ -365,7 +365,8 @@ footer p {
 }
 
 .widget.extendednavigation ul {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ALIGNMENTS */
@@ -431,7 +432,7 @@ footer p {
 .widget.extendednavigation li:hover > ul {
   display: block;
   position: absolute;
-  background-color: @color-swatch4;
+  background-color: @color-swatch7;
   z-index: 500;
   padding:10px 0px;
 }
@@ -1767,7 +1768,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
    =============================== */
 
 .widget.responsiveslideshow .slideshow-widget-wrapper {
-    height: 726px;
 }
 
 .widget.responsiveslideshow .slideshow-image-list {
@@ -1838,7 +1838,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls {
-    margin-top: 30px;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play
@@ -1955,7 +1954,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     /* NAV */
 
     .widget .extendednavigation ul {
-        width: 100%;
+        width: -10%;
         display: none;
         background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.9);
     }
@@ -1968,11 +1967,14 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     .widget.extendednavigation ul li.folder {
       position: relative;
       padding: 0px 0px 0px 12px;
-      background-image: image('/images/arrow-down.png');
       background-position: right center;
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
       box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+
+    .widget.extendednavigation ul li:hover > ul li:first-child {
+      margin-top:0;
     }
 
     .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -1980,7 +1982,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     }
 
     .widget.extendednavigation ul li .text, .widget.extendednavigation ul li.folder .text {
-        padding-left: 20px;
+        padding-left:20px;
         background-image: image('/images/arrow-left.png');
         background-position: left center;
         background-repeat: no-repeat;
@@ -1992,10 +1994,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .widget.extendednavigation ul li:hover > ul {
         display: block!important;
-        width: 100%;
+        width: 95%;
         bottom: inherit;
         padding: 0;
-        background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.9);
+        background-color: darken(@color-swatch4,5%);
         left:0px;
     }
 
@@ -2171,15 +2173,65 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 line-height: bkscale(@font-swatch8-line-height,0.4);
   }
 
-/* NAV */
+    /* NAV */
 
-    .widget .extendednavigation a.pull {
-    display: table;
-    width: 13%;
-    position: relative;
-    top: 60px;
-    margin:0px auto;
-  }
+    .widget .extendednavigation ul {
+        width: -10%;
+        display: none;
+        background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.9);
+    }
+
+    .widget .extendednavigation li {
+        width: 100%;
+        padding: 0;
+    }
+
+    .widget.extendednavigation ul li.folder {
+      position: relative;
+      padding: 0px 0px 0px 12px;
+      background-position: right center;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+
+    .widget.extendednavigation ul li:hover > ul li:first-child {
+      margin-top:0;
+    }
+
+    .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+        padding: 12px;
+    }
+
+    .widget.extendednavigation ul li .text, .widget.extendednavigation ul li.folder .text {
+        padding-left: 20px;
+        background-image: image('/images/arrow-left.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .widget.extendednavigation ul li > ul {
+        display: none!important;
+    }
+
+    .widget.extendednavigation ul li:hover > ul {
+        display: block!important;
+        width: 95%;
+        bottom: inherit;
+        padding: 0;
+        background-color: darken(@color-swatch4,5%);
+        left:0px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li {
+        padding: 10px 14px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
+        background-image: image('/images/arrow-left-wh.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
 
      /* GALLERY */
     
