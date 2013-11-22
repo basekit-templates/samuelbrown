@@ -2,8 +2,8 @@
    IMPORT CSS
    =============================== */
 
-   @import templatecommon('/paypal.less'); 
-   @import templatecommon('/dropbox.less');
+  @import "@{templateCommon}/paypal.less";
+  @import "@{templateCommon}/dropbox.less";
 
 /* ===============================
    TEMPLATE CSS
@@ -134,7 +134,7 @@ blockquote:after {
 
 .navbar {
   background-color:darken(@color-swatch2,75%);
-  height:40px;
+  height:100%;
 }
 
 
@@ -1931,7 +1931,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 6%;
+    width: 12%;
     position: relative;
     margin:0px auto;
     top:61px;
