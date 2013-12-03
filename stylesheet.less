@@ -2,8 +2,6 @@
    IMPORT CSS
    =============================== */
 
-  @import "@{templateCommon}/paypal.less";
-  @import "@{templateCommon}/dropbox.less";
 
 /* ===============================
    TEMPLATE CSS
@@ -137,11 +135,11 @@ blockquote:after {
 }
 
 
-.bluebar {
+.textwidget {
   background-color:@color-swatch4;
 }
 
-.bluebar h4 {
+.textwidget h4 {
   color:@font-swatch8-color;
   text-align:center;
   padding:22px 0px;
@@ -168,6 +166,10 @@ header .widget.profile{
 }
 
 /* DEAFULT PAGE TYPES */
+
+.bk-pt-default .widget.extendednavigation ul li, .widget.extendednavigation li:hover ul li {
+  background-color:none;
+}
 
 .bk-pt-default .extendednavigation ul li:hover > ul {
 
@@ -211,7 +213,7 @@ header .widget.profile{
   min-height:68px;
 }
 
-.footerphone {
+.footerwidget {
   float:none;
   margin:0px auto;
   display:table;
@@ -1971,9 +1973,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .widget.extendednavigation ul li .text, .widget.extendednavigation ul li.folder .text {
         padding-left:20px;
-        background-image: image('/images/arrow-left.png');
-        background-position: left center;
-        background-repeat: no-repeat;
     }
 
     .widget.extendednavigation ul li > ul {
@@ -1982,7 +1981,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .widget.extendednavigation ul li:hover > ul {
         display: block!important;
-        width: 95%;
+        width: 100%;
         bottom: inherit;
         padding: 0;
         background-color: darken(@color-swatch4,5%);
@@ -2197,9 +2196,6 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
 
     .widget.extendednavigation ul li .text, .widget.extendednavigation ul li.folder .text {
         padding-left: 20px;
-        background-image: image('/images/arrow-left.png');
-        background-position: left center;
-        background-repeat: no-repeat;
     }
 
     .widget.extendednavigation ul li > ul {
@@ -2208,7 +2204,7 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
 
     .widget.extendednavigation ul li:hover > ul {
         display: block!important;
-        width: 95%;
+        width: 100%;
         bottom: inherit;
         padding: 0;
         background-color: darken(@color-swatch4,5%);
