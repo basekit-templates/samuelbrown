@@ -99,7 +99,7 @@
         },
         "font6": {
             "font-family": "Raleway",
-            "font-size": "12px",
+            "font-size": "14px",
             "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch6",
