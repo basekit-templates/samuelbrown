@@ -1,6 +1,7 @@
 /* ===============================
    IMPORT CSS
    =============================== */
+@import "@{templateCommon}/basekit-bootstrap.less";
 
 
 /* ===============================
@@ -730,7 +731,7 @@ footer p {
    =============================== */
 
 .widget.button {
-    padding: 0;
+    //padding: 0;
 }
 
 .widget.button button
@@ -1346,33 +1347,47 @@ hr.line.align-right {
    =============================== */
 
 .widget.tweet .tweet{
-   margin: 0 0 10px;
-   padding: 14px 0;
-   border: none;
+	margin: 0 0 10px;
+	padding: 14px 0;
+	border: none;
 }
 
-.widget.tweet a {
-  padding: 17px 36px 17px 18px;
-  background-image: image('/images/twitter.png');
-  background-repeat: no-repeat;
-  margin: 2.2em auto;
-  border:0;
-  background-color: @color-swatch4;
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color: @font-swatch8-color;
-  text-decoration: none;
-  letter-spacing: @font-swatch7-letter-spacing;
-  background-position: center right 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.widget.tweet a, input.button, button.btn {
+	//padding: 17px 36px 17px 18px;
+	background-repeat: no-repeat;
+	margin: 2.2em auto;
+	border:0;
+	background-color: @color-swatch4;
+	font-family: @font-swatch5-font-family;
+	font-size: @font-swatch5-font-size;
+	font-weight:@font-swatch5-font-weight;
+	color: @font-swatch8-color;
+	text-decoration: none;
+	letter-spacing: @font-swatch7-letter-spacing;
+	//background-position: center right 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
+
+/*
+.widget.tweet a {
+	background-image: image('/images/twitter.png');
+}
+*/
 
 .widget.tweet a:hover{
   background-color: darken(@color-swatch4,5%);
-} 
+}
+
+/*
+.dropbox {
+	.btn {
+		background-image: image('/images/dropbox-icon.png');
+		background-position: center right 10px;
+	}
+}
+*/
 
 /* ==================================
    SOCIAL ICONS
@@ -1895,6 +1910,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .widget.feature h3 {
     margin-top: 10px;
     padding-top: 5px;
+  }
+
+  .widget.feature .feature-bgimg .content button.btn {
+	margin: 1em auto; 
   }
 
   header .widget.profile {
