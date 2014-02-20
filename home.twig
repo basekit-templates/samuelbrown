@@ -3,9 +3,11 @@
 {% block content %}
 
 <section>
-    {{widget('feature', 'thisunqiuewidgetname', {"header": "CREATIVE IDEAS. COMMON RESULTS.", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+    <div class="background-layer-image">
+    {{widget('feature', 'thisunqiuewidgetname', {"header": "CREATIVE IDEAS", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+    </div>
     <div class="header-wrapper clearfix">
-        <header>
+        <header class="bk-header">
             <div class="wrapper clearfix">
                 <div class="centeralign">
                     {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -28,7 +30,7 @@
     </div>
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="footerwidget">
             {{widget('profile', 'profileemail', { 'profileType':'email', 'email':'profile'})|raw}}

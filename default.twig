@@ -6,7 +6,7 @@
 
 <section>
     <div class="header-wrapper clearfix">
-        <header>
+        <header class="bk-header">
             <div class="wrapper clearfix">
                 {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
                 {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="footerwidget">
             {{widget('profile', 'profileemail', { 'profileType':'email', 'email':'profile'})|raw}}
