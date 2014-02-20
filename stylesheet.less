@@ -2,6 +2,7 @@
    IMPORT CSS
    =============================== */
 
+@import "@{templateCommon}/basekit-bootstrap.less";
 
 /* ===============================
    TEMPLATE CSS
@@ -163,6 +164,15 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 header .widget.profile{
   margin-top:25px;
+}
+
+.widget.feature .feature-bgimg .content button {
+  margin:0px auto;
+  padding:8px 28px 8px 14px;
+}
+
+.widget .extendednavigation a.pull:after {
+  box-shadow:none;
 }
 
 /* DEAFULT PAGE TYPES */
@@ -1353,7 +1363,6 @@ hr.line.align-right {
 
 .widget.tweet a {
   padding: 17px 36px 17px 18px;
-  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
   margin: 2.2em auto;
   border:0;
@@ -1371,7 +1380,7 @@ hr.line.align-right {
 }
 
 .widget.tweet a:hover{
-  background-color: darken(@color-swatch4,5%);
+
 } 
 
 /* ==================================
@@ -1686,7 +1695,11 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 .widget.signupform fieldset {
   padding: 0;
   border: 0;
-  margin: 0;
+}
+
+.widget.signupform fieldset button {
+  padding: 7px 44px 8px 14px;
+  margin-left:-8px;
 }
 
 .widget.signupform label {
@@ -2299,7 +2312,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     background-repeat: no-repeat;
     background-size: 7px;
     margin: 0.5em 0em;
-    padding: 12px 14px 12px 34px;
     border: 1px solid @color-swatch1;
     background-color: @font-swatch7-background-color;
     font-family: @font-swatch7-font-family;
