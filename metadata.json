@@ -2,6 +2,7 @@
     "name":"Samuel Brown",
     "thumbnail":"samuelbrown.png",
     "screenshot":"samuelbrown.png",
+    "templateType":"standard",
     "tags": {
     "en": ["fullscreen", "dark", "photography", "modern", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
     "es": ["pantalla completa", "oscuro", "fotografico", "moderno", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
